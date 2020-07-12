@@ -47,6 +47,7 @@ si no que tenga un lugar donde poder recurrir que lo ayude a esta tarea.
 Herramientas cómo Figma permiten trabajar de manera ordenada y muy escalable.
 
 link figma : https://www.figma.com/file/mMYttI4ZrnY6VjlAR9lWag/Untitled?node-id=0%3A1
+
 link zeplin: https://zpl.io/bPGEQXl
 
 Con esta herramientas es posible realizar diseño, prototipado y testeo, con los cual podemos realizar, por ejemplo: 
