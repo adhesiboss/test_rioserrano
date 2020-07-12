@@ -7,8 +7,11 @@ Test técnico:  Diseñador UI/UX
 Se solicita:
 Realizar Maquetado Html, Css y subirla a un repositorio en GitHub.
 Entendiendo que el negocio que sustenta la plataforma de la imagen, es un dashboard para clientes del rubro de la hoteleria:  
+
 ¿Qué sugerencias a la usabilidad, diseño o tareas puedes indicar para mejorar el UX?
+
 Considerando el punto anterior: 
+
 ¿Qué tareas y/o herramientas definirias para que el producto a desarrollar tenga una mejora continua en términos de usabilidad?
 
 Adquieres mayor puntuación si:
