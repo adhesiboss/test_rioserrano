@@ -9951,7 +9951,7 @@ h6 {
 }
 .contenedor .menu__principal {
   width: 72px;
-  height: 800px;
+  height: auto;
   background-color: #5649cd;
   display: inline-flex;
   flex-direction: column;
@@ -9986,6 +9986,14 @@ h6 {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  color: #5649cd;
 }
 .contenedor .board .board__head .board__iconos {
   display: flex;
@@ -10068,14 +10076,18 @@ h6 {
   height: 136px;
   border-radius: 16px;
   background-color: #ffffff;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-content: stretch;
   align-items: stretch;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
-.contenedor .board .board__row .board__col .board__card-servicios .card__servicio p {
+.contenedor .board .board__row .board__col .board__card-servicios .card__servicio {
+  border-bottom: 2px solid #5649cd;
   margin: 28px;
   order: 0;
   flex: 0 1 auto;
@@ -10086,8 +10098,7 @@ h6 {
   justify-content: center;
   align-content: stretch;
   align-items: center;
-  width: 100%;
-  height: auto;
+  width: 50%;
   font-family: "Roboto", sans-serif;
   font-size: 21px;
   font-weight: normal;
@@ -10096,6 +10107,84 @@ h6 {
   line-height: normal;
   letter-spacing: -0.21px;
   color: #5649cd;
+}
+.contenedor .board .board__row .board__col .board__card-servicios .card__servicio .card__servicio-texto {
+  width: 148px;
+  height: 61px;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.21px;
+  color: #5649cd;
+}
+.contenedor .board .board__row .board__col .board__card-hoteles_disponibles {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 13px 13px;
+  grid-template-areas: ". . ." ". . .";
+}
+.contenedor .board .board__row .board__col .board__card-hoteles_disponibles .card-hoteles_disponibles__titulo {
+  width: 280px;
+  height: 38px;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  color: #5649cd;
+  margin-bottom: 10px;
+}
+.contenedor .board .board__row .board__col .card-hoteles_disponibles__card {
+  width: 319px;
+  height: 187px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.45);
+  background-image: url(/assets/img/unhotel.png);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+}
+.contenedor .board .board__row .board__col .card-hoteles_disponibles__card .card-hoteles_disponibles__cardtitulo {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.45);
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  color: #ffffff;
+}
+.contenedor .board .board__row .board__col .card-hoteles_disponibles__card .card-hoteles_disponibles__boton {
+  width: 152px;
+  height: 47px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5649cd;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.23px;
+  color: #ffffff;
 }
 
 .boton_reservar {
