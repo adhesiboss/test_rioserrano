@@ -10014,12 +10014,15 @@ h6 {
   flex-wrap: nowrap;
   justify-content: center;
   align-content: stretch;
-  align-items: center;
+}
+.contenedor .board .board__row .board__col:last-child {
+  margin-left: 27px;
 }
 .contenedor .board .board__row .board__col {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
+  padding: 30px 0;
 }
 .contenedor .board .board__row .board__col .board__card-principal {
   width: 100%;
@@ -10028,7 +10031,7 @@ h6 {
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
   background-image: linear-gradient(to top, #a49edd, #83b5ee);
   padding: 47px 55px 68px 38px;
-  margin: 30px 0;
+  margin: 0 0 30px 0;
 }
 .contenedor .board .board__row .board__col .board__card-principal .card-principal__titulo {
   width: 117px;
@@ -10119,6 +10122,8 @@ h6 {
   line-height: normal;
   letter-spacing: -0.21px;
   color: #5649cd;
+  text-align: justify;
+  margin-left: 30px;
 }
 .contenedor .board .board__row .board__col .board__card-hoteles_disponibles {
   width: 100%;
@@ -10142,7 +10147,7 @@ h6 {
   color: #5649cd;
   margin-bottom: 10px;
 }
-.contenedor .board .board__row .board__col .card-hoteles_disponibles__card {
+.contenedor .board .board__row .board__col .board__card-hoteles_disponibles .card-hoteles_disponibles__card {
   width: 319px;
   height: 187px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.45);
@@ -10154,7 +10159,7 @@ h6 {
   align-content: stretch;
   align-items: center;
 }
-.contenedor .board .board__row .board__col .card-hoteles_disponibles__card .card-hoteles_disponibles__cardtitulo {
+.contenedor .board .board__row .board__col .board__card-hoteles_disponibles .card-hoteles_disponibles__card .card-hoteles_disponibles__cardtitulo {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
@@ -10168,7 +10173,7 @@ h6 {
   letter-spacing: -0.64px;
   color: #ffffff;
 }
-.contenedor .board .board__row .board__col .card-hoteles_disponibles__card .card-hoteles_disponibles__boton {
+.contenedor .board .board__row .board__col .board__card-hoteles_disponibles .card-hoteles_disponibles__card .card-hoteles_disponibles__boton {
   width: 152px;
   height: 47px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -10185,6 +10190,16 @@ h6 {
   line-height: normal;
   letter-spacing: -0.23px;
   color: #ffffff;
+}
+.contenedor .board .board__row .board__col .board__notificaciones {
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+  background-color: #ffffff;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  display: flex;
 }
 
 .boton_reservar {

@@ -83,12 +83,17 @@
             flex-wrap: nowrap;
             justify-content: center;
             align-content: stretch;
-            align-items: center;
+            
+            .board__col:last-child{
+                margin-left: 27px;
+            }
 
             .board__col {
                 order: 0;
                 flex: 0 1 auto;
                 align-self: auto;
+
+                padding: 30px 0;
 
                 .board__card-principal {
                     width: 100%;
@@ -97,7 +102,7 @@
                     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
                     background-image: linear-gradient(to top, #a49edd, #83b5ee);
                     padding: 47px 55px 68px 38px;
-                    margin: 30px 0;
+                    margin: 0 0 30px 0;
 
                     .card-principal__titulo {
                         width: 117px;
@@ -200,6 +205,8 @@
                             line-height: normal;
                             letter-spacing: -0.21px;
                             color: $morado-primario;
+                            text-align: justify;
+                            margin-left: 30px;
                         }
                     }
 
@@ -214,7 +221,7 @@
 
                     display: grid;
                     // grid-template-columns: 1fr 1fr 1fr;
-                    grid-template-rows: 1fr ;
+                    grid-template-rows: 1fr;
                     gap: 13px 13px;
                     grid-template-areas: ". . ."". . .";
 
@@ -233,61 +240,82 @@
 
 
                     }
-                }
 
-                .card-hoteles_disponibles__card {
-                    width: 319px;
-                    height: 187px;
-                    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.45);
-                    background-image: url(/assets/img/unhotel.png);
+                    .card-hoteles_disponibles__card {
+                        width: 319px;
+                        height: 187px;
+                        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.45);
+                        background-image: url(/assets/img/unhotel.png);
 
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: space-around;
-                    align-content: stretch;
-                    align-items: center;
-
-                    .card-hoteles_disponibles__cardtitulo {
-                        order: 0;
-                        flex: 0 1 auto;
-                        align-self: auto;
-
-                        // width: 261px;
-                        // height: 38px;
-                        text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.45);
-                        font-family: $Roboto;
-                        font-size: 32px;
-                        font-weight: bold;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: -0.64px;
-                        color: $color-blanco;
-                    }
-
-                    .card-hoteles_disponibles__boton {
-                        width: 152px;
-                        height: 47px;
-                        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-                        background-color: $morado-primario;
-                        border-radius: 30px;
                         display: flex;
-                        justify-content: center;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
+                        align-content: stretch;
                         align-items: center;
 
+                        .card-hoteles_disponibles__cardtitulo {
+                            order: 0;
+                            flex: 0 1 auto;
+                            align-self: auto;
 
-                        font-family: $Roboto;
-                        font-size: 23px;
-                        font-weight: 500;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: -0.23px;
-                        color: $color-blanco;
+                            // width: 261px;
+                            // height: 38px;
+                            text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.45);
+                            font-family: $Roboto;
+                            font-size: 32px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: -0.64px;
+                            color: $color-blanco;
+                        }
+
+                        .card-hoteles_disponibles__boton {
+                            width: 152px;
+                            height: 47px;
+                            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                            background-color: $morado-primario;
+                            border-radius: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+
+                            font-family: $Roboto;
+                            font-size: 23px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: -0.23px;
+                            color: $color-blanco;
+                        }
+
                     }
 
+
+
+
+
                 }
+
+                .board__notificaciones {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 9px;
+                    background-color: $color-blanco;
+
+                    order: 0;
+                    flex: 0 1 auto;
+                    align-self: auto;
+                    display: flex;
+                }
+
+
+
+
             }
 
         }
