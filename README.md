@@ -25,6 +25,7 @@ Realizar animaciones que mejorarian la experiencia del usuario
 ============================================================================
 
 Respuestas
+
 ¿Qué sugerencias a la usabilidad, diseño o tareas puedes indicar para mejorar el UX?
 
 Sugerencias de usabilidad.
