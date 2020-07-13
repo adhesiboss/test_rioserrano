@@ -1,320 +1,355 @@
-.contenedor {
-    width: 100%;
-    height: 100%;
-    // background-color: $color-blanco;
-    background-color: #E7E8EC;
-    display: inline-flex;
+.about__container {
+    width: 100vw;
+    height: auto;
+    font-family: $Roboto;
 
-    .menu__principal {
-        width: 72px;
+
+    @include md {
+
+        grid-template-columns: 20% 80%;
+        width: 100%;
         height: auto;
-        background-color: $morado-primario;
 
-        display: inline-flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-content: stretch;
-        align-items: center;
 
-        padding: 30px;
-
-        .menu__logo,
-        .menu__icon {
-            margin-bottom: 30px;
-        }
 
     }
 
-    .board {
-        padding: 0 20px;
-        width: 100%;
+    .about__fijo {
 
-        .board__head {
+        @include md {
+
+            width: 100%;
+            display: grid;
+
+        }
+
+        .about__col1 {
+            background-color: $morado-primario;
             width: 100%;
             height: auto;
-            border-radius: 16px;
-            background-color: $color-blanco;
+            grid-column: 1 / 1;
+            grid-row: 0;
+            padding: 2vh 2vw;
+
+            @include md {
+
+                grid-column: 1/ 2;
+                grid-row: 1 / 1;
 
 
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-content: stretch;
-            align-items: center;
-            padding: 16px 30px;
-
-            .board__titulo {
-                order: 0;
-                flex: 0 1 auto;
-                align-self: auto;
-
-
-                font-family: $Roboto;
-                font-size: 24px;
-                font-weight: 500;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: -0.24px;
-                color: $morado-primario;
             }
 
-            .board__iconos {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: flex-end;
-                align-content: stretch;
-                align-items: center;
+            .about__menu {
+                text-align: center;
 
-                .board__icon {
-                    order: 0;
-                    flex: 0 1 auto;
-                    align-self: auto;
+                .about__menu__item {
+                    margin: 37px auto;
+
                 }
+
+                .about__menu__item:first-child {
+                    margin: 40px auto;
+
+                }
+
+                .about__menu__item:last-child {
+                    margin: 50px auto;
+
+                }
+
             }
         }
 
-        .board__row {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: stretch;
-            
-            .board__col:last-child{
-                margin-left: 27px;
+        .about__col2 {
+            background-color: #E7E8EC;
+            width: 100%;
+            height: auto;
+            padding: 30px 30px;
+
+
+            @include md {
+                grid-column: 2 / 2;
+                grid-row: 1 / 1;
+                padding: 0 30px;
+
+
             }
 
-            .board__col {
-                order: 0;
-                flex: 0 1 auto;
-                align-self: auto;
+            .header_top {
+                width: 100%;
+                height: auto;
+                background-color: $color-blanco;
+                border-radius: 6px;
+                padding: 20px;
+                display: inline-flex;
+                justify-content: space-between;
 
-                padding: 30px 0;
+                @include md {}
 
-                .board__card-principal {
-                    width: 100%;
-                    height: 266px;
-                    border-radius: 16px;
-                    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
-                    background-image: linear-gradient(to top, #a49edd, #83b5ee);
-                    padding: 47px 55px 68px 38px;
-                    margin: 0 0 30px 0;
+                .header_top__h2 {
 
-                    .card-principal__titulo {
-                        width: 117px;
-                        height: 28px;
-                        font-family: $Roboto;
-                        font-size: 24px;
-                        font-weight: 500;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: -0.24px;
-                        color: $color-blanco;
+                    font-family: $Roboto;
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: -0.21px;
+                    color: #303030;
+                }
+
+                .header_top__icons {
+                    display: inline-flex;
+                    justify-content: space-around;
+
+                    .header_top__icon {
+                        margin: 0 3px;
+
+                        @include md {
+                            margin: 0 30px;
+
+
+                        }
+                    }
+                }
+            }
+
+            .cambio_wrapper {
+                @include md {
+                    display: grid;
+                    grid-template-columns: 1.5fr 1fr;
+                    grid-column-gap: 15px;
+
+
+                }
+                @include lg {
+                    display: grid;
+                    grid-template-columns: 3fr 1fr;
+                    grid-column-gap: 15px;
+
+
+                }
+
+            }
+
+
+            .card_principal {
+                padding: 20px;
+                margin: 30px auto;
+                width: 100%;
+                height: auto;
+                border-radius: 16px;
+                box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
+                background-image: linear-gradient(to top, #a49edd, #83b5ee);
+
+                @include md {}
+
+                .card_principal__h2 {
+                    color: $color-blanco;
+                    font-size: 21px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: -0.21px;
+                }
+
+                .card_principal__h1 {
+                    color: $color-blanco;
+                    font-size: 28px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: -0.28px;
+                }
+
+                .card_principal__parrafo {
+                    color: $color-blanco;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.48;
+                    letter-spacing: -0.16px;
+                }
+
+            }
+
+            .servicios {
+                padding: 30px;
+                text-align: center;
+                margin-bottom: 30px;
+                width: 100%;
+                height: auto;
+                border-radius: 6px;
+                background-color: $color-blanco;
+                box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
+
+                @include md {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-column-gap: 15px;
+                    padding: 10px 15px;
+
+
+                }
+
+                .servicio__card {
+                    border-bottom: 2px solid $morado-primario;
+                    margin: 30px auto;
+
+
+                    @include md {
+                        padding: 5px;
+
+
                     }
 
-                    .card-principal__nombre {
-                        width: 223px;
-                        height: 38px;
-                        font-family: $Roboto;
-                        font-size: 32px;
+                    .servicio__img {
+                        margin-bottom: 20px;
+                    }
+
+                    .servicio__parrafo {
+                        margin-bottom: 20px;
+
+                    }
+                }
+            }
+
+            .hoteles {
+                margin-bottom: 30px;
+                text-align: center;
+
+                @include md {
+                    text-align: left;
+                }
+
+                .hoteles__titulo {
+                    font-size: 28px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: -0.28px;
+                    margin-bottom: 20px;
+                }
+
+                .hoteles__cuadro {
+                    @include md {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr ;
+                        grid-column-gap: 5px;
+                        grid-row-gap: 5px;
+                    }
+                    @include lg {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr ;
+                        grid-column-gap: 10px;
+                        grid-row-gap: 10px;
+                    }
+
+
+
+                }
+
+
+                .hoteles__1 {
+                    width: 100%;
+                    height: 180px;
+                    background-color: rgba(0, 0, 0, 0.46);
+                    background-image: url(/assets/img/unhotel.png);
+                    padding: 20px;
+
+                    .hoteles__h2 {
+
+                        text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.45);
+                        font-size: 28px;
                         font-weight: bold;
                         font-stretch: normal;
                         font-style: normal;
                         line-height: normal;
-                        letter-spacing: -0.32px;
+                        letter-spacing: -0.56px;
                         color: $color-blanco;
                     }
 
-                    .card-principal__linea {
-                        width: 895px;
-                        height: 3px;
+                    .hoteles__boton {
+                        margin-top: 40px;
+                        width: 136px;
+                        height: 41px;
+                        border-radius: 30px;
+                        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.25);
+                        background-color: $morado-primario;
+                        color: $color-blanco;
+                        font-size: 21px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: -0.21px;
+                    }
+
+                    .hoteles__boton:hover {
+
+                        color: $morado-primario;
                         background-color: $color-blanco;
                     }
 
-                    .card-principal__texto {
-                        width: 895px;
-                        height: 61px;
-                        font-family: $Roboto;
-                        font-size: 21px;
+                }
+            }
+
+            .notificaciones {
+                padding: 20px;
+                width: 100%;
+                height: auto;
+                border-radius: 9px;
+                background-color: $color-blanco;
+                box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
+                text-align: center;
+
+                @include md {
+
+                    margin: 30px auto;
+
+                }
+                
+                
+
+                .notificaciones__titulo {
+                    width: 100%;
+                    height: auto;
+                    font-family: $Roboto;
+                    font-size: 28px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: -0.28px;
+                    color: #303030;
+                }
+
+                .notificaciones__cuadro {
+                    text-align: left;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    background-color: $color-blanco;
+                    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
+                    padding: 20px;
+                    margin: 20px 0;
+
+                    .notificaciones__fecha {
+                        position: relative;
+                        top: -20px;
+                        text-align: right;
+                        font-size: 17px;
                         font-weight: normal;
                         font-stretch: normal;
                         font-style: normal;
                         line-height: normal;
-                        letter-spacing: -0.21px;
-                        color: $color-blanco;
+                        letter-spacing: -0.17px;
                     }
                 }
-
-                .board__card-servicios {
-                    width: 100%;
-                    height: 136px;
-                    border-radius: 16px;
-                    background-color: $color-blanco;
-
-                    margin-bottom: 30px;
-
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: space-between;
-                    align-content: stretch;
-                    align-items: stretch;
-                    border-radius: 5px;
-                    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
-
-
-
-                    .card__servicio {
-
-                        border-bottom: 2px solid $morado-primario;
-                        margin: 28px;
-                        order: 0;
-                        flex: 0 1 auto;
-                        align-self: auto;
-
-                        display: inline-flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        justify-content: center;
-                        align-content: stretch;
-                        align-items: center;
-
-                        width: 50%;
-                        font-family: $Roboto;
-                        font-size: 21px;
-                        font-weight: normal;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: -0.21px;
-                        color: $morado-primario;
-
-                        .card__servicio-texto {
-                            width: 148px;
-                            height: 61px;
-                            font-family: $Roboto;
-                            font-size: 21px;
-                            font-weight: normal;
-                            font-stretch: normal;
-                            font-style: normal;
-                            line-height: normal;
-                            letter-spacing: -0.21px;
-                            color: $morado-primario;
-                            text-align: justify;
-                            margin-left: 30px;
-                        }
-                    }
-
-                }
-
-
-                .board__card-hoteles_disponibles {
-                    width: 100%;
-                    height: auto;
-                    // background-color: crimson;
-                    padding: 10px;
-
-                    display: grid;
-                    // grid-template-columns: 1fr 1fr 1fr;
-                    grid-template-rows: 1fr;
-                    gap: 13px 13px;
-                    grid-template-areas: ". . ."". . .";
-
-                    .card-hoteles_disponibles__titulo {
-                        width: 280px;
-                        height: 38px;
-                        font-family: $Roboto;
-                        font-size: 32px;
-                        font-weight: bold;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: -0.32px;
-                        color: $morado-primario;
-                        margin-bottom: 10px;
-
-
-                    }
-
-                    .card-hoteles_disponibles__card {
-                        width: 319px;
-                        height: 187px;
-                        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.45);
-                        background-image: url(/assets/img/unhotel.png);
-
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: nowrap;
-                        justify-content: space-around;
-                        align-content: stretch;
-                        align-items: center;
-
-                        .card-hoteles_disponibles__cardtitulo {
-                            order: 0;
-                            flex: 0 1 auto;
-                            align-self: auto;
-
-                            // width: 261px;
-                            // height: 38px;
-                            text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.45);
-                            font-family: $Roboto;
-                            font-size: 32px;
-                            font-weight: bold;
-                            font-stretch: normal;
-                            font-style: normal;
-                            line-height: normal;
-                            letter-spacing: -0.64px;
-                            color: $color-blanco;
-                        }
-
-                        .card-hoteles_disponibles__boton {
-                            width: 152px;
-                            height: 47px;
-                            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-                            background-color: $morado-primario;
-                            border-radius: 30px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-
-                            font-family: $Roboto;
-                            font-size: 23px;
-                            font-weight: 500;
-                            font-stretch: normal;
-                            font-style: normal;
-                            line-height: normal;
-                            letter-spacing: -0.23px;
-                            color: $color-blanco;
-                        }
-
-                    }
-
-
-
-
-
-                }
-
-                .board__notificaciones {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 9px;
-                    background-color: $color-blanco;
-
-                    order: 0;
-                    flex: 0 1 auto;
-                    align-self: auto;
-                    display: flex;
-                }
-
-
-
 
             }
 
