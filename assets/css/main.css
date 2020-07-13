@@ -10154,6 +10154,17 @@ h6 {
   background-color: rgba(0, 0, 0, 0.46);
   background-image: url(../img/unhotel.png);
   padding: 20px;
+  margin: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .about__container .about__fijo .about__col2 .hoteles .hoteles__1 {
+    margin: 10px 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .about__container .about__fijo .about__col2 .hoteles .hoteles__1 {
+    margin: 5px 0;
+  }
 }
 .about__container .about__fijo .about__col2 .hoteles .hoteles__1 .hoteles__h2 {
   text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.45);

@@ -260,6 +260,13 @@
                     background-color: rgba(0, 0, 0, 0.46);
                     background-image: url(../img/unhotel.png);
                     padding: 20px;
+                    margin: 20px 0;
+                    @include md {
+                        margin: 10px 0;
+                    }
+                    @include lg {
+                        margin: 5px 0;
+                    }
 
                     .hoteles__h2 {
 
