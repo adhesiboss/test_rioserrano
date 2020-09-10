@@ -38,6 +38,12 @@
 
 
             }
+            @include lg {
+
+                padding: 27px 2vw;
+
+
+            }
 
             .about__menu {
                 text-align: center;
@@ -48,12 +54,12 @@
                 }
 
                 .about__menu__item:first-child {
-                    margin: 40px auto;
+                    margin: 10px auto 40px;
 
                 }
 
                 .about__menu__item:last-child {
-                    margin: 50px auto;
+                    margin: 150px auto;
 
                 }
 
@@ -140,7 +146,7 @@
                 height: auto;
                 border-radius: 16px;
                 box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
-                background-image: linear-gradient(to right #a49edd, #83b5ee);
+                background-image: linear-gradient(to right, #a49edd, #83b5ee);
 
                 @include md {}
 
@@ -251,6 +257,14 @@
 
 
 
+                }
+                .hoteles__cuadro-interior{
+                    @include md {
+                        display: grid;
+                        grid-template-columns: 1fr ;
+                        grid-column-gap: 5px;
+                        grid-row-gap: 5px;
+                    }
                 }
 
 
