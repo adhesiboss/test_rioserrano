@@ -9975,6 +9975,11 @@ h6 {
     grid-row: 1/1;
   }
 }
+@media screen and (min-width: 900px) {
+  .about__container .about__fijo .about__col1 {
+    padding: 27px 2vw;
+  }
+}
 .about__container .about__fijo .about__col1 .about__menu {
   text-align: center;
 }
@@ -9982,10 +9987,10 @@ h6 {
   margin: 37px auto;
 }
 .about__container .about__fijo .about__col1 .about__menu .about__menu__item:first-child {
-  margin: 40px auto;
+  margin: 10px auto 40px;
 }
 .about__container .about__fijo .about__col1 .about__menu .about__menu__item:last-child {
-  margin: 50px auto;
+  margin: 150px auto;
 }
 .about__container .about__fijo .about__col2 {
   background-color: #E7E8EC;
@@ -10052,7 +10057,7 @@ h6 {
   height: auto;
   border-radius: 16px;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
-  background-image: linear-gradient(to top, #a49edd, #83b5ee);
+  background-image: linear-gradient(to right, #a49edd, #83b5ee);
 }
 .about__container .about__fijo .about__col2 .card_principal .card_principal__h2 {
   color: #ffffff;
@@ -10146,6 +10151,14 @@ h6 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__container .about__fijo .about__col2 .hoteles .hoteles__cuadro-interior {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
   }
 }
 .about__container .about__fijo .about__col2 .hoteles .hoteles__1 {
